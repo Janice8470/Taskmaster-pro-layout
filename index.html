@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TaskMaster Pro — Smart Task Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#6ee7b7"/>
+              <stop offset="1" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+          <rect rx="18" width="100" height="100" fill="url(#g)" />
+          <path d="M30 55 L45 40 L70 65" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">TaskMaster Pro</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="cta">
+        <a class="btn btn-ghost" href="#">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <h1>Work smarter, ship faster with TaskMaster Pro</h1>
+        <p class="tagline">A lightweight, powerful task manager built for teams and solo makers. Plan, prioritize and deliver — without the noise.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#features">Get Started</a>
+          <a class="btn btn-ghost" href="#pricing">See Pricing</a>
+        </div>
+      </div>
+
+      <div class="hero-illustration" aria-hidden="true">
+        <!-- Inline SVG illustration -->
+        <img src="assets/hero-illustration.svg" alt="Illustration showing task flow and charts" />
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2 class="section-title">Features that power productivity</h2>
+      <p class="section-sub">Everything you need for planning, tracking and shipping work — in one focused tool.</p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon"><img src="assets/icon-organize.svg" alt="Organize icon"></div>
+          <h3>Smart Organization</h3>
+          <p>Create nested projects, tags and custom views to keep work tidy and discoverable.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon"><img src="assets/icon-collaboration.svg" alt="Collaboration icon"></div>
+          <h3>Team Collaboration</h3>
+          <p>Assign tasks, comment in-line and get real-time status updates across your team.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon"><img src="assets/icon-analytics.svg" alt="Analytics icon"></div>
+          <h3>Insights & Analytics</h3>
+          <p>Track progress with built-in reports, velocity charts and exportable data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2 class="section-title">Simple pricing</h2>
+      <p class="section-sub">Free for individuals. Teams plans start at $8/user/month.</p>
+      <!-- Minimal placeholder for layout completeness -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>TaskMaster Pro</strong>
+        <p>Designed for focus and velocity.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <small class="copyright">© <span id="year"></span> TaskMaster Pro</small>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
